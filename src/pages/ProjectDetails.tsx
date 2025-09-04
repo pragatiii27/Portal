@@ -48,15 +48,11 @@ export default function ProjectDetails() {
           <CardContent className="space-y-4">
             <p>
               <strong>Registered:</strong>{" "}
-              {project.date_registered
-                ? new Date(project.date_registered).toLocaleDateString()
-                : "N/A"}
+              {new Date(project.date_registered).toLocaleDateString()}
             </p>
             <p>
               <strong>Deadline:</strong>{" "}
-              {project.deadline
-                ? new Date(project.deadline).toLocaleDateString()
-                : "N/A"}
+              {new Date(project.deadline).toLocaleDateString()}
             </p>
             <p>
               <strong>Funding:</strong> ₹{project.funding_used} / ₹
